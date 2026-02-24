@@ -1,0 +1,154 @@
+#headertop {
+  background-color:#02657f;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 30px; 
+
+
+}
+
+.sitelogo {
+  height: 80px;
+  margin: 0 40px; 
+}
+
+
+nav ul {
+  display: flex;
+  flex-direction: row; 
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  gap: 100px; 
+}
+
+nav ul li {
+  font-weight: bold;
+  justify-content: space-between;
+ 
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #fbd404;
+}
+
+nav ul li a {
+  color: white; 
+  text-decoration: none;
+  font-size: 20px;
+}
+
+body {
+  
+  background-color: #fefaf0; 
+  margin: 0px;
+
+}
+.oval {
+  background-color: #02657f;
+  width: 800px;       
+  height: 800px;      
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5000px 900px;
+  position: absolute;
+  overflow: hidden;
+  
+}
+.ovallogo {
+   height: 10;
+   position: relative;
+  width: 300px;
+  padding: 150px;
+  margin-bottom:-100px;
+   
+}
+
+
+
+
+.intro {
+  text-align: center;
+  padding:0px 20px; 
+}
+.intro h1 {
+  font-size: 50px;
+ margin: 190px 10px 0px 300px;
+  color: black;
+}
+
+
+.intro h2 {
+  font-size: 50px;
+ margin: 30px 10px 0px 250px;
+  color: black;
+}
+
+.intro h3 {
+  font-size: 40px;
+   margin:40px 10px 600px 300px;
+font-size: 60px;
+  color: black;
+}
+
+.socials {
+	text-align: center;
+  
+}
+.socials li {
+    list-style: none;
+    display: inline-block;
+}
+.socials a {
+	border-bottom: none;
+}
+
+footer {
+  background-color: #fbd404; 
+  text-align: center;
+  padding: 30px;
+  font-family: 'Futura PT', sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  width: 100%;
+  margin: 0;
+  justify-self: auto;
+  
+}
+
+.burger {
+  display: none;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #02657f;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  .burger {
+    display: block;
+    
+  }
+}
+.sitelogo:hover{
+ opacity: 0.2;
+ transition: ease-in 0.5 ease-in-out 1;
+}
+  
